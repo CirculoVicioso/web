@@ -7,8 +7,12 @@ import { FooterComponent } from './components/footer/footer.component'
   selector: 'app-root',
   imports: [ RouterOutlet, HeaderComponent, FooterComponent ],
   template: `
-    <app-header></app-header>
-    <router-outlet></router-outlet>
+    <header app-header></header>
+    <hr class="divider">
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <hr class="divider">
     <app-footer></app-footer>`,
   styles: `
     :host {
@@ -16,7 +20,14 @@ import { FooterComponent } from './components/footer/footer.component'
       flex-direction: column;
       height: 100svh;
       padding: 16px;
-    }`
+    }
+
+    main {
+      flex-grow: 1;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  `
 })
 export class AppComponent {
   title = 'cv-web';
