@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use 'reset';
+
+* {
+  font-family: 'Arial', sans-serif;
+}
+
+.divider {
+  border: 0;
+  border-top: 2px solid black;
+}
