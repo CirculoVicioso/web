@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component'
       <router-outlet></router-outlet>
     </main>
     <hr class="divider">
-    <app-footer></app-footer>`,
+    <footer app-footer></footer>`,
   styles: `
     :host {
       display: flex;
